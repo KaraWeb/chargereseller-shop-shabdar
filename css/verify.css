@@ -1,0 +1,184 @@
+@import url(IranSans/fontiran.css);
+body {
+	direction: rtl;
+	font-family: "IRANSans";
+	background-color: #EAFFCC;
+	background-image: url('../img/Clover.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -590px -2px;
+}
+.whole a {
+	text-decoration: none;
+}
+input {
+	border: none;
+}
+.whole {
+	width: 100%;
+}
+.buy-container {
+	float: right;
+	width: 1000px;
+}
+.menus-container {
+	float: left;
+	width: calc(100% - 1000px);
+}
+.top-menu {
+	width: 320px;
+}
+.top-menu .menu-leaf {
+	float: right;
+	width: 100px;
+	height: 98px;
+	cursor: pointer;
+	background-image: url('../img/menu-leaf.png');
+	text-align: center;
+	margin-left: 10px;
+}
+.help {
+	margin-left: 0 !important;
+}
+.menu-leaf p {
+	margin: 37px 0;
+	font-size: 15px;
+	color: #469541;
+	font-weight: bold;
+}
+.support {
+	position: relative;
+}
+.support-content-left {
+	display: none;
+	position: absolute;
+	right: 165px;
+	top: 105px;
+}
+.help-arrow-left {
+	display: none;
+	width: 32px;
+	height: 32px;
+	transform: rotate(-20deg);
+	background-image: url('../img/help-arrow.png');
+	background-repeat: no-repeat;
+}
+.support-content-right {
+	display: none;
+	position: absolute;
+	right: 30px;
+	top: 105px;
+}
+.help-arrow-right {
+	display: none;
+	width: 32px;
+	height: 32px;
+	transform: rotate(-60deg);
+	background-image: url('../img/help-arrow.png');
+	background-repeat: no-repeat;
+	margin-right: 87px;
+	margin-top: -3px;
+}
+.content {
+	width: 261px;
+	background-color: #469541;
+	border-radius: 20px 0 20px 20px;
+	margin: 10px 35px 0 0;
+	box-sizing: border-box;
+	padding: 7px 15px;
+}
+.content p {
+	font-size: 15px;
+	margin: 0;
+	padding: 8px;
+	color: #ffffff;
+	font-weight: normal;
+}
+.helpModalClass {
+	max-width: 800px!important;
+}
+.qtip-content {
+	max-height: 500px;
+	overflow: auto !important;
+}
+.top-menu .menu-leaf:hover {
+	transform: scale(1.1,1.1);
+}
+.container {
+	text-align: center;
+	margin-top: 55px;
+}
+#left img {
+	width: 200px;
+	height: 270px;
+}
+.failed img {
+	width: 200px;
+	height: 270px;
+}
+.failed .explanation p {
+	width: 500px;
+	margin: 0 250px 15px 0;
+}
+.failed .explanation h1 {
+	color: #ff0000;
+}
+#content table {
+	display: inline-block;
+	margin-top: 15px;
+}
+#content td {
+    padding: 5px 15px;
+    border: 1px solid #BABABA;
+}
+#content h1 {
+	font-size: 25px;
+}
+.ltr {
+	direction: ltr;
+}
+.back {
+	width: 300px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.button {
+	border-radius: 10px;
+	box-shadow: 0 5px #00490f;
+	width: 177px;
+	height: 47px;
+	background-color: #8cc63e;
+	color: #00490f;
+	font-family: "IranSans";
+	font-size: 15px;
+	cursor: pointer;
+}
+.button:hover {
+	box-shadow: 0 5px #2fb90b;
+}
+.button:active {
+	box-shadow: 0 2px #2fb90b;
+	transform: translateY(5px);
+}
+@media only screen and (max-width: 1351px) {
+	.menus-container {
+		position: relative;
+	}
+	.top-menu {
+		position: absolute;
+		left: 0;
+		margin: 0;
+	}
+	.services-menu {
+		margin: 343px 125px 0 0;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.services-menu {
+		position: absolute;
+		left: 0;
+	}
+}
+.clear{
+	clear: both;
+}
