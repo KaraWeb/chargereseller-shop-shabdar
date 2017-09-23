@@ -178,7 +178,7 @@ $(document).ready(function(){
 				$('.buy.' + selectedMenu + ' .types .types-cover p:nth-child(2)').hide();
 			}
 			$("." + selectedMenu + " " + ".price-value-container .price-value").html($('input[name=radio-' + selectedMenu + ']:checked').val());
-			$("input[name='data[amount]']").val($("." + selectedMenu + " .price-value-container .price-value").html());
+			$("#dataAmount").val($("." + selectedMenu + " .price-value-container .price-value").html());
 			
 			$('.service-container.active').removeClass('active');
 			$(this).addClass('active');
@@ -186,8 +186,8 @@ $(document).ready(function(){
 			setAmounts();
 			
 			if (selectedMenu == "bill") {
-				$("input[name='data[amount]']").val("");
-				$("input[name='data[count]']").val("");
+				$("#dataAmount").val("");
+				$("#dataCount").val("");
 				$("input[name='data[type]']").val("");
 				$('.buy.' + selectedMenu + ' .types .types-cover p:first-child').hide();
 				$('.buy.' + selectedMenu + ' .types .types-cover p:nth-child(2)').show();
@@ -240,7 +240,7 @@ $(document).ready(function(){
 		$('.package.active').removeClass('active');
         $(this).addClass('active');
 		$('.internet-package .internet-package-types .price-value-container .price-value').html($('.internet-package .internet-package-types select').find('option:selected').data("price"));
-		$("input[name='data[amount]']").val($(".internet-package .internet-package-types .price-value-container .price-value").html());
+		$("#dataAmount").val($(".internet-package .internet-package-types .price-value-container .price-value").html());
 		$("input[name='data[packageId]']").val($('.internet-package .internet-package-types select').find('option:selected').attr("value"));
 		setAmounts();
 		$('.types-container.' + $(this).data('type')).show();
@@ -271,7 +271,7 @@ $(document).ready(function(){
 		$('.gift.active').removeClass('active');
         $(this).addClass('active');
 		$('.gift-card .gift-card-types .price-value-container .price-value').html($('.gift-card .gift-card-types select').find('option:selected').data("price"));
-		$("input[name='data[amount]']").val($(".gift-card .gift-card-types .price-value-container .price-value").html());
+		$("#dataAmount").val($(".gift-card .gift-card-types .price-value-container .price-value").html());
 		$("input[name='data[productId]']").val($('.gift-card .gift-card-types select').find('option:selected').attr("value"));
 		setAmounts();
 		$('.types-container.' + $(this).data('type')).show();
@@ -294,7 +294,7 @@ $(document).ready(function(){
 		$('.antivirus.active').removeClass('active');
         $(this).addClass('active');
 		$('.anti-virus .anti-virus-types .price-value-container .price-value').html($('.anti-virus .anti-virus-types select').find('option:selected').data("price"));
-		$("input[name='data[amount]']").val($(".anti-virus .anti-virus-types .price-value-container .price-value").html());
+		$("#dataAmount").val($(".anti-virus .anti-virus-types .price-value-container .price-value").html());
 		$("input[name='data[productId]']").val($('.anti-virus .anti-virus-types select').find('option:selected').attr("value"));
 		setAmounts();
 		$('.types-container.' + $(this).data('type')).show();
@@ -325,11 +325,13 @@ $(document).ready(function(){
 		if (selectedMenu == "topup") {
 			$(".topup .price-value-container .price-value").html($(this).attr("value"));
 			$(".topup .price-value-container .price-unit").html("تومان");
+			$("#dataAmount").val($(this).attr("value"));
 			setAmounts();
 		};
 		if (selectedMenu == "pin") {
 			$(".pin .price-value-container .price-value").html($(this).attr("value"));
 			$(".pin .price-value-container .price-unit").html("تومان");
+			$("#dataAmount").val($(this).attr("value"));
 			setAmounts();
 		};
 	});
@@ -347,8 +349,7 @@ $(document).ready(function(){
 			var price = $('.buy.' + selectedMenu + ' .types-container.' + selectedMenu + ' select').find('option:selected').data("price") * count;
 		}
 		$("." + selectedMenu + " " + ".price-value-container .price-value").html((price));
-		$("input[name='data[amount]']").val($("." + selectedMenu + " .price-value-container .price-value").html());
-		$("input[name='data[count]']").val(count);
+		$("#dataCount").val(count);
 	}
 	
 	$(".arrow .arrow-up").click(function(){
