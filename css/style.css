@@ -645,8 +645,32 @@ table#bill-info td span.bill.police {
 	font-size: 16px;
 	margin: 4px;
 }
-.amazing, .td-lte {
+.package p.amazing, .package p.td-lte {
 	font-size: 13px !important;
+}
+.package .bg {
+	width: 50px;
+	height: 50px;
+	background: url('../img/internet-packages-mtn.png') no-repeat;
+	margin: 0 auto;
+}
+.package .bg.hourly {
+	background-position: -250px 0px;
+}
+.package .bg.daily {
+	background-position: -200px 0px;
+}
+.package .bg.weekly {
+	background-position: -151px 0px;
+}
+.package .bg.monthly {
+	background-position: -100px 0px;
+}
+.package .bg.amazing {
+	background-position: -50px 0px;
+}
+.package .bg.td-lte {
+	background-position: 0px 0px;
 }
 .package:hover {
 	animation: shake 0.2s cubic-bezier(.36,.07,.19,.97) both;
@@ -860,6 +884,12 @@ table#bill-info td span.bill.police {
 }
 .types-cover {
 	display: none;
+}
+.types-cover .point-at {
+	width: 64px;
+	height: 64px;
+	margin: 0 auto;
+	background: url('../img/point-at.png') no-repeat center;
 }
 .types-cover p {
 	margin: 81.5px 20px 15px;

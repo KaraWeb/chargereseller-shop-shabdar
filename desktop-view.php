@@ -41,27 +41,27 @@
 							<div class="packages-container">
 								<div class="package IN-MTN-Hourly" data-package-type="IN-MTN-Hourly">
 									<p class="hourly">ساعتی</p>
-									<img src="img/hourly.png" alt="Hourly">
+									<div class="bg hourly"></div>
 								</div>
 								<div class="package IN-MTN-Daily" data-package-type="IN-MTN-Daily">
 									<p class="daily">روزانه</p>
-									<img src="img/daily.png" alt="Daily">
+									<div class="bg daily"></div>
 								</div>
 								<div class="package IN-MTN-Weekly" data-package-type="IN-MTN-Weekly">
 									<p class="weekly">هفتگی</p>
-									<img src="img/weekly.png" alt="Weekly">
+									<div class="bg weekly"></div>
 								</div>
 								<div class="package IN-MTN-Monthly" data-package-type="IN-MTN-Monthly">
 									<p class="monthly">ماهانه</p>
-									<img src="img/monthly.png" alt="Monthly">
+									<div class="bg monthly"></div>
 								</div>
 								<div class="package IN-MTN-Amazing" data-package-type="IN-MTN-Amazing">
 									<p class="amazing">شگفت انگیز</p>
-									<img src="img/wonder.png" alt="Amazing">
+									<div class="bg amazing"></div>
 								</div>
 								<div class="package IN-MTN-TDLTE" data-package-type="IN-MTN-TDLTE">
 									<p class="td-lte IN-MTN-TDLTE">ثابت(TD-LTE)</p>
-									<img src="img/td-lte.png" alt="TD-LTE">
+									<div class="bg td-lte"></div>
 								</div>
 								<div class="clear"></div>
 							</div>
@@ -115,7 +115,7 @@
 						<div class="types-cover">
 							<p>ابتدا از منوی سمت راست، گزینه ی مورد نظر خود را انتخاب کنید.</p>
 							<p>ابتدا شناسه ی قبض و شناسه ی پرداخت خود را وارد کنید.</p>
-							<img src="img/point-at.png" alt="Point At">
+							<div class="point-at"></div>
 						</div>
 						<div class="topup types-container">
 							<p>انتخاب نوع شارژ</p>
