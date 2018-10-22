@@ -37,34 +37,13 @@
 							</div>
 						</div>
 						<div class="internet-package">
-							<p>انتخاب بسته (ایرانسل)</p>
-							<div class="packages-container">
-								<div class="package IN-MTN-Hourly" data-package-type="IN-MTN-Hourly">
-									<p class="hourly">ساعتی</p>
-									<div class="bg hourly"></div>
-								</div>
-								<div class="package IN-MTN-Daily" data-package-type="IN-MTN-Daily">
-									<p class="daily">روزانه</p>
-									<div class="bg daily"></div>
-								</div>
-								<div class="package IN-MTN-Weekly" data-package-type="IN-MTN-Weekly">
-									<p class="weekly">هفتگی</p>
-									<div class="bg weekly"></div>
-								</div>
-								<div class="package IN-MTN-Monthly" data-package-type="IN-MTN-Monthly">
-									<p class="monthly">ماهانه</p>
-									<div class="bg monthly"></div>
-								</div>
-								<div class="package IN-MTN-Amazing" data-package-type="IN-MTN-Amazing">
-									<p class="amazing">شگفت انگیز</p>
-									<div class="bg amazing"></div>
-								</div>
-								<div class="package IN-MTN-TDLTE" data-package-type="IN-MTN-TDLTE">
-									<p class="td-lte IN-MTN-TDLTE">ثابت(TD-LTE)</p>
-									<div class="bg td-lte"></div>
-								</div>
-								<div class="clear"></div>
-							</div>
+                            <p>انتخاب اپراتور</p>
+                            <div class="operators-container">
+                                <div class="operator mtn active" data-charge-type="MTN"></div>
+                                <div class="operator mci" data-charge-type="MCI"></div>
+                                <div class="operator rtl" data-charge-type="RTL"></div>
+                                <div class="clear"></div>
+                            </div>
 						</div>
 						<div class="bill">
 							<p>اطلاعات قبض</p>
@@ -226,7 +205,11 @@
 								<div class="clear"></div>
 							</div>
 							<div class="internet-package-types">
-								<select>
+								<select id="InternetPackageCategories">
+								</select>
+							</div>
+                            <div class="internet-package-types">
+								<select id="InternetPackageTypes">
 								</select>
 							</div>
 							<div class="price-container">
@@ -437,7 +420,7 @@
 				<input type="text" name="data[issuer]" id="dataIssuer" value="">
 				<input type="hidden" name="data[paymentDetails]" value="true">
 				<input type="text" name="data[redirectToPage]"  value="true">
-				<input type="text" name="data[scriptVersion]"  value="Script-Shabdar-1.0">
+				<input type="text" name="data[scriptVersion]"  value="Script-Shabdar-1.1">
 				<input type="text" name="data[firstOutputType]"  value="json">
 				<input type="text" name="data[secondOutputType]"  value="get">
 			</form>

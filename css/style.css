@@ -193,7 +193,7 @@ select {
 }
 .leaf {
 	width: 360px;
-	height: 290px;
+	height: 340px;
 	background-color: #469541;
 	float: right;
 	margin-left: 10px;
@@ -881,6 +881,15 @@ table#bill-info td span.bill.police {
 }
 .buy.internet-package .types div.internet-package, .buy.gift-card .types div.gift-card, .buy.anti-virus .types div.anti-virus {
 	display: none;
+}
+.internet-package .charge-type-container {
+	display: inline-block;
+	width: 300px;
+}
+.internet-package .charge-type{
+	width: 150px;
+	float: right;
+	text-align: right;
 }
 .types-cover {
 	display: none;
