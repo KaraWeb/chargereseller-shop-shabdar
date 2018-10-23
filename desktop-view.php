@@ -32,7 +32,6 @@
 								<div class="operator mtn active" data-charge-type="MTN"></div>
 								<div class="operator mci" data-charge-type="MCI"></div>
 								<div class="operator rtl" data-charge-type="RTL"></div>
-								<div class="operator tal" data-charge-type="TAL"></div>
 								<div class="clear"></div>
 							</div>
 						</div>
@@ -420,7 +419,7 @@
 				<input type="text" name="data[issuer]" id="dataIssuer" value="">
 				<input type="hidden" name="data[paymentDetails]" value="true">
 				<input type="text" name="data[redirectToPage]"  value="true">
-				<input type="text" name="data[scriptVersion]"  value="Script-Shabdar-1.1">
+				<input type="text" name="data[scriptVersion]"  value="Script-Shabdar-1.2">
 				<input type="text" name="data[firstOutputType]"  value="json">
 				<input type="text" name="data[secondOutputType]"  value="get">
 			</form>
