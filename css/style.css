@@ -430,7 +430,7 @@ select {
 	display: none;
 }
 .gateways-container {
-	width: 348px;
+	width: 240px !important;
 	margin: 55px auto 0;
 }
 .gateway {
@@ -452,6 +452,10 @@ select {
 .saman {
 	background-position: -88px -43px;
 }
+.emtiaz {
+	display: inline-block !important;
+	background-position: -270px -45px;
+}
 .zarrinpal {
 	background-position: -223px -43px;
 }
@@ -469,6 +473,9 @@ select {
 }
 .saman.active {
 	background-position: -88px 2px;
+}
+.emtiaz.active {
+	background-position: -270px 0;
 }
 .zarrinpal.active {
 	background-position: -223px 2px;

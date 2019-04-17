@@ -328,6 +328,7 @@
 						<div class="gateways-container">
 							<div class="gateway mellat" data-gateway-type="Mellat" data-tooltip="ملت"></div>
 							<div class="gateway saman" data-gateway-type="Saman" data-tooltip="سامان"></div>
+                            <div class="gateway emtiaz" data-gateway-type="Emtiyaz" data-tooltip="امتیاز"></div>
 							<div class="gateway zarrinpal" data-gateway-type="Zarinpal" data-tooltip="زرین پال"></div>
 							<div class="gateway parsian" data-gateway-type="Parsian" data-tooltip="پارسیان"></div>
 							<div class="gateway melli" data-gateway-type="Melli" data-tooltip="ملی"></div>
