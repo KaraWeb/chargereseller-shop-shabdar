@@ -8,6 +8,7 @@
 		<link type="image/x-icon" rel="icon" href="css/favicon.ico"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="css/sweetalert2.css" />
 		<link type="text/css" rel="stylesheet" href="css/jquery.qtip.css" />
 		<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -415,12 +416,13 @@
 				<input type="text" name="data[billId]" id="dataBillId" value="">
 				<input type="text" name="data[paymentId]" id="dataPaymentId" value="">
 				<input type="text" name="data[productId]" id="dataProductId" value="">
+				<input type="text" name="data[isTarabord]" id="dataIsTarabord" value="">
 				<input type="text" name="data[webserviceId]" id="dataWebserviceId" value="<?php echo $config['webserviceID']; ?>">
 				<input type="text" name="data[redirectUrl]" id="dataRedirectUrl" value="<?php echo $root . '/verify.php'; ?>">
 				<input type="text" name="data[issuer]" id="dataIssuer" value="">
 				<input type="hidden" name="data[paymentDetails]" value="true">
 				<input type="text" name="data[redirectToPage]"  value="true">
-				<input type="text" name="data[scriptVersion]"  value="Script-Shabdar-1.3">
+				<input type="text" name="data[scriptVersion]"  value="Script-Shabdar-1.4">
 				<input type="text" name="data[firstOutputType]"  value="json">
 				<input type="text" name="data[secondOutputType]"  value="get">
 			</form>
@@ -442,6 +444,7 @@
 				<img src="img/download-android-application-left.gif" title="دانلود اپلیکیشن اندروید خرید شارژ و پرداخت قبوض" alt="اپلیکیشن اندروید خرید شارژ و پرداخت قبوض">
 			</a>
 			<script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>
+			<script type='text/javascript' src='js/sweetalert2.js'></script>
 			<script type='text/javascript' src='js/charge.js'></script>
 			<script type='text/javascript' src='js/jquery.cookie.js'></script>
 			<script type='text/javascript' src='js/jquery.qtip.min.js'></script>
