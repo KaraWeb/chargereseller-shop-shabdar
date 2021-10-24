@@ -7,7 +7,7 @@
 		<meta name="keywords" content="<?php echo $config['keywords']; ?>" />
 		<link type="image/x-icon" rel="icon" href="css/favicon.ico"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.0" />
 		<link type="text/css" rel="stylesheet" href="css/sweetalert2.css" />
 		<link type="text/css" rel="stylesheet" href="css/jquery.qtip.css" />
 		<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
@@ -327,6 +327,7 @@
 					<div class="leaf payment-gateway">
 						<p>درگاه پرداخت</p>
 						<div class="gateways-container">
+							<div class="gateway default" data-gateway-type="Default" data-tooltip="پیشفرض"></div>
 							<div class="gateway mellat" data-gateway-type="Mellat" data-tooltip="ملت"></div>
 							<div class="gateway saman" data-gateway-type="Saman" data-tooltip="سامان"></div>
                             <div class="gateway emtiaz" data-gateway-type="Emtiyaz" data-tooltip="امتیاز"></div>
@@ -422,7 +423,7 @@
 				<input type="text" name="data[issuer]" id="dataIssuer" value="">
 				<input type="hidden" name="data[paymentDetails]" value="true">
 				<input type="text" name="data[redirectToPage]"  value="true">
-				<input type="text" name="data[scriptVersion]"  value="Script-Shabdar-1.4">
+				<input type="text" name="data[scriptVersion]"  value="Script-Shabdar-1.5">
 				<input type="text" name="data[firstOutputType]"  value="json">
 				<input type="text" name="data[secondOutputType]"  value="get">
 			</form>
@@ -445,7 +446,7 @@
 			</a>
 			<script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>
 			<script type='text/javascript' src='js/sweetalert2.js'></script>
-			<script type='text/javascript' src='js/charge.js'></script>
+			<script type='text/javascript' src='js/charge.js?v=1.0'></script>
 			<script type='text/javascript' src='js/jquery.cookie.js'></script>
 			<script type='text/javascript' src='js/jquery.qtip.min.js'></script>
 			<script type="text/javascript" src="https://cdn.zarinpal.com/zarinak/v1/checkout.js"></script>

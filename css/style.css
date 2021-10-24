@@ -467,6 +467,12 @@ select {
 .fanava {
 	background-position: -177px -43px;
 }
+.default {
+	background-position: -313px -43px;
+}
+.default.active {
+	background-position: -314px 2px;
+}
 .mellat.active {
 	background-position: -43px 2px;
 }

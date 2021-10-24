@@ -992,10 +992,18 @@ $(document).ready(function () {
 
     function initialize() {
 
-        $.each(paymentGateways, function (index, value) {
-            $(".gateway[data-gateway-type=" + value + "]").show();
-            $('.gateways-container').css("width", paymentGateways.length * 58 + 'px');
-        });
+        //Add payment gateways to form
+        paymentGateways = paymentGateways.filter(gateway => gateway == 'Zarinpal' || gateway == 'Emtiyaz');
+        paymentGateways.push('Default');
+        paymentGateways.reverse();
+        if (paymentGateways.length > 1) {
+            $.each(paymentGateways, function (gatewayKey, gatewayValue) {
+                $.each(paymentGateways, function (index, value) {
+                    $(".gateway[data-gateway-type=" + value + "]").show();
+                    $('.gateways-container').css("width", paymentGateways.length * 58 + 'px');
+                });
+            });
+        }
 
         var giftcardCount = 0;
 
