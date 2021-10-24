@@ -366,8 +366,14 @@
 						<div class="support-content support-content-left support-content-right">
 							<div class="help-arrow help-arrow-left help-arrow-right"></div>
 							<div class="content">
-								<p>پشتیبانی تلفنی: 88019574-021</p>
-								<p>پشتیبانی گوگل: chargereseller24@gmail.com</p>
+								<p>
+                                    پشتیبانی تلفنی:
+                                    <span class="support-number"></span>
+                                </p>
+								<p>
+                                    پشتیبانی گوگل:
+                                    <span class="support-email"></span>
+                                </p>
 							</div>
 						</div>
 					</div>
@@ -446,7 +452,7 @@
 			</a>
 			<script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>
 			<script type='text/javascript' src='js/sweetalert2.js'></script>
-			<script type='text/javascript' src='js/charge.js?v=1.0'></script>
+			<script type='text/javascript' src='js/charge.js?v=1.1'></script>
 			<script type='text/javascript' src='js/jquery.cookie.js'></script>
 			<script type='text/javascript' src='js/jquery.qtip.min.js'></script>
 			<script type="text/javascript" src="https://cdn.zarinpal.com/zarinak/v1/checkout.js"></script>

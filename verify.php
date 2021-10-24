@@ -27,10 +27,16 @@
 						</div>
 						<div class="support-content support-content-left support-content-right">
 							<div class="help-arrow help-arrow-left help-arrow-right"></div>
-							<div class="content">
-								<p>پشتیبانی تلفنی: 88019574-021</p>
-								<p>پشتیبانی گوگل: chargereseller24@gmail.com</p>
-							</div>
+                            <div class="content">
+                                <p>
+                                    پشتیبانی تلفنی:
+                                    <span class="support-number"></span>
+                                </p>
+                                <p>
+                                    پشتیبانی گوگل:
+                                    <span class="support-email"></span>
+                                </p>
+                            </div>
 						</div>
 					</div>
 					<div class="menu-leaf help" data-hasqtip="0" aria-describedby="qtip-0">
@@ -338,7 +344,7 @@
 			</div>
 			<div class="clear"></div>
 			<script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>
-			<script type='text/javascript' src='js/charge.js'></script>
+            <script type='text/javascript' src='js/charge.js?v=1.1'></script>
 			<script type='text/javascript' src='js/jquery.cookie.js'></script>
 			<script type='text/javascript' src='js/jquery.qtip.min.js'></script>
 		</div>
