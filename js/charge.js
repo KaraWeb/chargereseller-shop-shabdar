@@ -1,3 +1,6 @@
+var antivirusCount = 0;
+var giftcardCount = 0;
+
 function getViewportOffset($e) {
     var $window = $(window),
         scrollLeft = $window.scrollLeft(),
@@ -158,6 +161,10 @@ $(document).ready(function () {
         if (selectedMenu != $(this).data('type')) {
             $(".count-value").val(1);
             $("input[name='data[type]']").val("MTN");
+            $('.information-container').show();
+            $('.leaf.informations p').show();
+            $('.leaf.payment-gateway > div').show();
+            $('.gateway-title').show();
             selectedMenu = $(this).data('type');
             $("input[name='data[ChargeKind]']").val(selectedMenu);
             if (jQuery.inArray(selectedMenu, ['bill', 'gift-card', 'anti-virus', 'internet-package']) == -1) {
@@ -196,21 +203,34 @@ $(document).ready(function () {
                 $('.buy.' + selectedMenu + ' .types .types-cover p:first-child').hide();
                 $('.buy.' + selectedMenu + ' .types .types-cover p:nth-child(2)').show();
             }
-
             if (selectedMenu == "anti-virus" || selectedMenu == "internet-package" || selectedMenu == "gift-card" || selectedMenu == "bill") {
                 $('.payment-cover').show();
+                if(selectedMenu == "gift-card" && giftcardCount === 0){
+                    $('.types-container.gift-card').hide();
+                    $('.information-container').hide();
+                    $('.leaf.informations p').hide();
+                    $('.gateway-title').hide();
+                    $('.leaf.payment-gateway > div').hide();
+                }
+                if(selectedMenu == "anti-virus" && antivirusCount === 0){
+                    $('.types-container.anti-virus').hide();
+                    $('.information-container').hide();
+                    $('.leaf.informations p').hide();
+                    $('.gateway-title').hide();
+                    $('.leaf.payment-gateway > div').hide();
+                }
                 $("input[name='data[type]']").val("");
             } else {
                 $('.payment-cover').hide();
             }
 
             if (selectedMenu == "topup" || selectedMenu == "pin") {
-                $(".active").removeClass('active');
+                $(".service-container.active").removeClass('active');
                 $(".operators-container .operator:first-child").addClass('active');
                 $("input[name='data[productId]']").val("");
                 $("input[name='data[packageId]']").val("");
             } else {
-                $(".active").removeClass('active');
+                $(".service-container.active").removeClass('active');
             }
 
             startup();
@@ -1005,9 +1025,10 @@ $(document).ready(function () {
                     $('.gateways-container').css("width", paymentGateways.length * 58 + 'px');
                 });
             });
+        }else{
+            $('.gateways-container').remove();
+            $('.gateway-title').remove();
         }
-
-        var giftcardCount = 0;
 
         $.each(products.giftCard, function (key, value) {
             if (value != "") {
@@ -1020,8 +1041,6 @@ $(document).ready(function () {
             $(".gift-card-container").css({"width": "317px", "overflow-y": "scroll"});
         }
 
-        var antivirusCount = 0;
-
         $.each(products.antivirus, function (key, value) {
             if (value != "") {
                 antivirusCount++;
@@ -1032,6 +1051,15 @@ $(document).ready(function () {
 
         if (antivirusCount > 6) {
             $(".gift-card-container").css({"width": "317px", "overflow-y": "scroll"});
+        }
+
+        if(giftcardCount === 0){
+            $(".gift-card-container").html('<p>در حال حاضر این محصول موجود نمی باشد.</p>');
+            $(".gift-card-container").css({"display": "flex","justify-content": "center", "align-items": "center"});
+        }
+        if(antivirusCount === 0){
+            $(".anti-virus-container").html('<p>در حال حاضر این محصول موجود نمی باشد.</p>');
+            $(".anti-virus-container").css({"display": "flex","justify-content": "center", "align-items": "center"});
         }
 
     }

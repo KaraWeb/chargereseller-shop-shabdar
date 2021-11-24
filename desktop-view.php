@@ -7,8 +7,8 @@
 		<meta name="keywords" content="<?php echo $config['keywords']; ?>" />
 		<link type="image/x-icon" rel="icon" href="css/favicon.ico"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.0" />
-		<link type="text/css" rel="stylesheet" href="css/sweetalert2.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.2" />
+		<link type="text/css" rel="stylesheet" href="css/sweetalert2.css?v=1.0" />
 		<link type="text/css" rel="stylesheet" href="css/jquery.qtip.css" />
 		<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -325,9 +325,9 @@
 						</div>
 					</div>
 					<div class="leaf payment-gateway">
-						<p>درگاه پرداخت</p>
+						<p class="gateway-title">درگاه پرداخت</p>
 						<div class="gateways-container">
-							<div class="gateway default" data-gateway-type="Default" data-tooltip="پیشفرض"></div>
+							<div class="gateway default active" data-gateway-type="Default" data-tooltip="درگاه اصلی"></div>
 							<div class="gateway mellat" data-gateway-type="Mellat" data-tooltip="ملت"></div>
 							<div class="gateway saman" data-gateway-type="Saman" data-tooltip="سامان"></div>
                             <div class="gateway emtiaz" data-gateway-type="Emtiyaz" data-tooltip="امتیاز"></div>
@@ -339,7 +339,7 @@
 						</div>
 						<div class="attention">
 							<img src="img/attention.png" alt="Attention Sign">
-							<p>خرید با کلیه کارت های بانکی عضو شبکه شتاب امکان پذیر می باشد.</p>
+							<p>خرید با کلیه کارت‌های بانکی امکان پذیر می باشد.</p>
 							<div class="clear"></div>
 						</div>
 						<div class="payment">
@@ -367,11 +367,11 @@
 							<div class="help-arrow help-arrow-left help-arrow-right"></div>
 							<div class="content">
 								<p>
-                                    پشتیبانی تلفنی:
+                                    شماره تلفن:
                                     <span class="support-number"></span>
                                 </p>
 								<p>
-                                    پشتیبانی گوگل:
+                                    آدرس ایمیل:
                                     <span class="support-email"></span>
                                 </p>
 							</div>
@@ -429,7 +429,7 @@
 				<input type="text" name="data[issuer]" id="dataIssuer" value="">
 				<input type="hidden" name="data[paymentDetails]" value="true">
 				<input type="text" name="data[redirectToPage]"  value="true">
-				<input type="text" name="data[scriptVersion]"  value="Script-Shabdar-1.5">
+				<input type="text" name="data[scriptVersion]"  value="Script-Shabdar-1.6">
 				<input type="text" name="data[firstOutputType]"  value="json">
 				<input type="text" name="data[secondOutputType]"  value="get">
 			</form>
@@ -452,7 +452,7 @@
 			</a>
 			<script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>
 			<script type='text/javascript' src='js/sweetalert2.js'></script>
-			<script type='text/javascript' src='js/charge.js?v=1.1'></script>
+			<script type='text/javascript' src='js/charge.js?v=1.2'></script>
 			<script type='text/javascript' src='js/jquery.cookie.js'></script>
 			<script type='text/javascript' src='js/jquery.qtip.min.js'></script>
 			<script type="text/javascript" src="https://cdn.zarinpal.com/zarinak/v1/checkout.js"></script>

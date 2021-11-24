@@ -430,6 +430,8 @@ select {
 	display: none;
 }
 .gateways-container {
+	display: flex;
+	justify-content: center;
 	width: 240px !important;
 	margin: 55px auto 0;
 }
@@ -497,13 +499,15 @@ select {
 .attention {
 	width: 284px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .attention p {
 	margin: 0;
 	font-size: 10px;
 }
 .attention img {
-	float: right;
 	margin: 5px 0 4px 4px;
 }
 .payment, .bill-check {
@@ -544,15 +548,6 @@ select {
 	cursor: pointer;
 	text-align: right;
 	margin-right: 60px;
-}
-.non-credit-mtn {
-	width: 162px;
-}
-.magic-charge {
-	width: 113px;
-}
-.wimax {
-	width: 95px;
 }
 .non-credit-mtn input, .magic-charge input, .wimax input {
 	cursor: pointer;
@@ -1162,4 +1157,10 @@ img.application {
   right: 80px;
   top: 242px;
   width: 18px;
+}
+.leaf.payment-gateway{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
